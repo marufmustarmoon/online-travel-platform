@@ -22,7 +22,7 @@ include('header.php');
 </head>
 <body>
     <div class="bg-image" style="
-    background-image: url('assets/bg.jpg');
+    background-image: url('bg.jpg');
     height: 600px;
   ">
 
