@@ -10,7 +10,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-  <a class="navbar-brand text-light" href="index.php">Online Travel Platform</a>
+  <a class="navbar-brand text-light" href="">Online Travel Platform</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -25,12 +25,12 @@ if (isset($_SESSION['user_name']))
     <?php
               
             echo "<li class='nav-item dropdown  '>
-            <a class='nav-link active text-light' href='login_form.php' role='button' data-bs-toggle='dropdown' aria-expanded='false'>"
+            <a class='nav-link active text-light' href='main/login_form.php' role='button' data-bs-toggle='dropdown' aria-expanded='false'>"
              .$_SESSION['user_name'].
             "</a>";
            
             echo "<li class='nav-item'>
-            <a class='nav-link active text-light' aria-current='page' href='logout.php'>Log out</a>
+            <a class='nav-link active text-light' aria-current='page' href='main/logout.php'>Log out</a>
             </li>";
                 
          
@@ -40,7 +40,7 @@ if (isset($_SESSION['user_name']))
  {
     
     echo "<li class='nav-item'>
-    <a class='nav-link active text-light' aria-current='page' href='login_form.php'>My Account</a>
+    <a class='nav-link active text-light' aria-current='page' href='main/login_form.php'>My Account</a>
     </li>";
  }
               

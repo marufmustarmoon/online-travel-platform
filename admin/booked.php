@@ -1,7 +1,7 @@
 <?php
 
 
-@include '../dbconnect.php';
+@include '../main/dbconnect.php';
 
 @include 'header.php';
 

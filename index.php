@@ -1,7 +1,7 @@
 <?php
-include('session.php');
-include('dbconnect.php');
-include('header.php');
+include('main/session.php');
+include('main/dbconnect.php');
+include('main/header.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@ include('header.php');
 </head>
 <body>
     <div class="bg-image" style="
-    background-image: url('assets/bg.jpg');
+    background-image: url('main/bg.jpg');
     height: 600px;
   ">
 
@@ -41,7 +41,7 @@ include('header.php');
         
       
         <?php
-        include('tours.php');
+        include('main/tours.php');
         ?>
 
     </div>
@@ -59,7 +59,7 @@ $(document).ready(function(){
        
         if(input != ""){
             $.ajax({
-                url:"livesearch.php",
+                url:"main/livesearch.php",
                 method:"POST",
                 data:{input:input},
 
@@ -89,6 +89,6 @@ $(document).ready(function(){
 </html>
 
 <?php
-include('footer.php');
+include('main/footer.php');
 ?>
 
